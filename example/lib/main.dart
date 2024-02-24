@@ -139,6 +139,8 @@ class _HomePageState extends State<HomePage> {
     }, onError: (error) {
       print('listSession error: ${error.toString()}');
     });
+
+    FlutterBranchSdk.validateSDKIntegration();
   }
 
   void initDeepLinkData() {
